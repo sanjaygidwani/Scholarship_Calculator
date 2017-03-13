@@ -1,5 +1,5 @@
 /**
- * scholarship_calculation_for_freshmen.cpp                                                     
+ * scholarship-calculator-for-freshmen.cpp                                                     
  *                                                              
  * Sanjay Gidwani
  * sgidwani59@gmail.com                                             
