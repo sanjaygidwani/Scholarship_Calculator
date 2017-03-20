@@ -21,7 +21,7 @@ class scholar
 {
 	private:	
 	string name,father;
-    int lpunest;
+        int lpunest;
 	float board;
 	static long id_no;
 	int y;
@@ -38,7 +38,7 @@ class scholar
 			cout<<endl<<"FATHER'S NAME:-";
 			getline(cin,father);
 			
-		    cout<<endl<<"LPUNEST MARKS (Out Of 360):-";
+		        cout<<endl<<"LPUNEST MARKS (Out Of 360):-";
 			cin>>lpunest;
 			
 			if(lpunest>360||lpunest<0)  // invalid condition for lpunest
@@ -163,8 +163,8 @@ class scholar
 				else if(lpunest>-1&&lpunest<100)
 				{
 					x7=0;
-				    cout<<endl<<"Scholarship Based On LPUNEST:- N.A"<<endl<<"(No Scholarship For Marks Less Than 100)";
-		  	    }
+				        cout<<endl<<"Scholarship Based On LPUNEST:- N.A"<<endl<<"(No Scholarship For Marks Less Than 100)";
+		  	        }
 			} else x7=0;
 			
 			  int x8; // test condition for 12th board
@@ -176,65 +176,65 @@ class scholar
 			  		cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A";
 			  		cout<<endl<<"(You Have Maximum Scholarship Already)";
 				}
-				  else if(x7==40000)
+				else if(x7==40000)
+			        {
+					if(board>89)
 					{
-						if(board>89)
-						{
-                         x8=10000;
-						 cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-					    }
-					    else if(board>69&&board<90)
-					    {
-					     x8=5000;
-					     cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-						}
-						else if(board>64&&board<70) 
-						{
-						 x8=0;
-						 cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
-					    }
+                                           x8=10000;
+				           cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 					}
-					else if(x7==30000)
+					else if(board>69&&board<90)
 					{
-						if(board>89)
-						{
-                         x8=10000;
-						 cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-					    }
-					    else if(board>69&&board<90)
-					    {
-					     x8=5000;
-					     cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-						}
-						else if(board>64&&board<70) 
-						{
-						 x8=0;
-						 cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
-					    }
+					   x8=5000;
+					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+				        }
+					else if(board>64&&board<70) 
+				        {
+					   x8=0;
+				           cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
 					}
-					else if(x7==0)
+				}
+				else if(x7==30000)
+				{
+					if(board>89)
 					{
-						if(board>89)
-						{
-                         x8=30000;
-						 cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-					    }
-					    else if(board>79&&board<90)
-					    {
-					  	 x8=25000;
-					  	 cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-						}
-						else if(board>69&&board<80)
-					    {
-					  	 x8=20000;
-					  	 cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
-						}
-						else if(board>64&&board<70) 
-						{
-						  x8=0;
-						  cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
-					    }
+                                           x8=10000;
+					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 					}
+					else if(board>69&&board<90)
+					{
+					   x8=5000;
+					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+				        }
+					else if(board>64&&board<70) 
+					{
+					   x8=0;
+				           cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
+					}
+				}
+				else if(x7==0)
+				{
+				        if(board>89)
+				        {
+                                           x8=30000;
+					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+					}
+					else if(board>79&&board<90)
+					{
+					   x8=25000;
+					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+				        }
+				        else if(board>69&&board<80)
+					{
+					   x8=20000;
+					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+					}
+					else if(board>64&&board<70) 
+					{
+					   x8=0;
+				           cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
+					}
+				}
 				}
 				
 				int x9; // test condition for sports scholarship
@@ -287,7 +287,7 @@ class scholar
 			f10<<endl<<"LPUNEST MARKS:-"<<lpunest<<"/360";
 			f10<<endl<<"12th Board Marks:-"<<board<<"%";
 			f10<<endl<<endl<<"Total Academic Scholarship:-"<<x7+x8<<"/- Per Sem";
-		    f10<<endl<<"Sports Scholarship:-"<<x9<<"/- Per Sem";
+		        f10<<endl<<"Sports Scholarship:-"<<x9<<"/- Per Sem";
 			f10<<endl<<endl<<"(TERMS:- Maximum Scholarship Among Academic Or Sports Will Be Considered)";
 			f10<<endl<<endl<<"Your Fee Structure For B.Tech (CSE) is:-";
 			f10<<endl<<"Tuition Fee:- 84,500/- Per Semester";
@@ -324,8 +324,9 @@ int main()
 	{
 		if(x==1)  // fee structure details in a file
 		{ 
-		    fstream f1; 
-		    f1.open("Fee Structure.cpp",ios::out);
+		        fstream f1; 
+		        f1.open("Fee Structure.cpp",ios::out);
+			
 			f1<<"Your Fee Structure For B.Tech (CSE) is:-";
 			f1<<endl<<"Tuition Fee:- 84,500/- Per Semester";
 			f1<<endl<<"Exam Fee:- 3,000/- Yearly";
