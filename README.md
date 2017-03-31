@@ -7,3 +7,5 @@
 • The project is made with the basic functionality of object-oriented programming language.
 
 • Programming Language: C++
+
+-> Copyright © 2016 sgidwani96(Sanjay Gidwani). All rights reserved.
