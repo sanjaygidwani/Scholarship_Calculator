@@ -1,11 +1,7 @@
 # Scholarship Calculator
 
-• Created a scholarship calculator for freshmen in which student has to enter marks of 12th standard, LPUNEST and JEE mains. Also if student has received any medal in National Games can enter details about it, and accordingly the scholarship will be calculated based on the university's (Lovely Professional University) scholarship policy.
+In this project, a student should be able to enter marks of 12th Standard, JEE Mains, LPUNEST and if the student has received any medal in National Games should be able to enter details about it on a CLI and based on the "University's Scholarship Policy 2016" the scholarship information of the student should be stored in a file.
 
-• The project does not miss any of the provided constraints. 
-
-• The project is made with the basic functionality of object-oriented programming language.
-
-• Programming Language: C++
+I used C++ programming language with basic OOP and File Handling concepts to create this project.
 
 ``Copyright © 2016 Sanjay Gidwani``
