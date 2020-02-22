@@ -1,14 +1,3 @@
-/**
- * scholarship-calculator-for-freshmen.cpp                                                     
- *                                                              
- * Sanjay Gidwani
- * sgidwani59@gmail.com                                             
- *                                                              
- * Implemented a program that calculates the scholarship of a student according 
- * to the LPU's scholarship policy 2016, and stores the information in a file.
- *
- **/
-
 #include<iostream>
 #include<stdio.h>
 #include<conio.h>
@@ -20,12 +9,12 @@ using namespace std;
 class scholar
 {
 	private:	
-	string name,father;
-        int lpunest;
-	float board;
-	static long id_no;
-	int y;
-	static int j,k;
+		string name,father;
+		int lpunest;
+		float board;
+		static long id_no;
+		int y;
+		static int j,k;
 	
 	public:
 		
@@ -62,8 +51,8 @@ class scholar
 				}
 				if(x2==2)
 				{
-				cout<<endl<<"Thank You!";
-				exit(0);
+					cout<<endl<<"Thank You!";
+					exit(0);
 				}
 				else if(x2==1)
 				{
@@ -86,18 +75,18 @@ class scholar
 			cout<<endl<<endl<<"1. YES"<<endl<<"2. NO"<<endl<<endl;
 			int x5;
 			cin>>x5;
-				if(x5!=1&&x5!=2)
-				{
-					cout<<endl<<"Invalid Choice";
-					cout<<endl<<"Please Press 1 Or 2"<<endl;
-					int x300;
-					cin>>x300;
-					if(x300==1)
-					x5=1;
-					else if(x300==2)
-					x5=2;
-					else exit(0);
-				}
+			if(x5!=1&&x5!=2)
+			{
+				cout<<endl<<"Invalid Choice";
+				cout<<endl<<"Please Press 1 Or 2"<<endl;
+				int x300;
+				cin>>x300;
+				if(x300==1)
+				x5=1;
+				else if(x300==2)
+				x5=2;
+				else exit(0);
+			}
 			if(x5==1)
 			{
 				cout<<endl<<"Name Of Your Sport";
@@ -167,9 +156,9 @@ class scholar
 		  	        }
 			} else x7=0;
 			
-			  int x8; // test condition for 12th board
-			  if(board>64&&board<101)
-			  {
+			int x8; // test condition for 12th board
+			if(board>64&&board<101)
+			{
 			  	if(x7==50000)
 			  	{
 			  		x8=0;
@@ -180,103 +169,103 @@ class scholar
 			        {
 					if(board>89)
 					{
-                                           x8=10000;
-				           cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+                                        	x8=10000;
+				        	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 					}
 					else if(board>69&&board<90)
 					{
-					   x8=5000;
-					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+						x8=5000;
+					   	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 				        }
 					else if(board>64&&board<70) 
 				        {
-					   x8=0;
-				           cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
+					   	x8=0;
+				           	cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
 					}
 				}
 				else if(x7==30000)
 				{
 					if(board>89)
 					{
-                                           x8=10000;
-					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+                                           	x8=10000;
+					   	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 					}
 					else if(board>69&&board<90)
 					{
-					   x8=5000;
-					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+					   	x8=5000;
+					   	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 				        }
 					else if(board>64&&board<70) 
 					{
-					   x8=0;
-				           cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
+					   	x8=0;
+				           	cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
 					}
 				}
 				else if(x7==0)
 				{
 				        if(board>89)
 				        {
-                                           x8=30000;
-					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+                                           	x8=30000;
+					   	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 					}
 					else if(board>79&&board<90)
 					{
-					   x8=25000;
-					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+					   	x8=25000;
+					   	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 				        }
 				        else if(board>69&&board<80)
 					{
-					   x8=20000;
-					   cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
+					   	x8=20000;
+					   	cout<<endl<<"Scholarship Based On 12th Board Marks:-"<<x8<<"/- Per Sem";
 					}
 					else if(board>64&&board<70) 
 					{
-					   x8=0;
-				           cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
+					   	x8=0;
+				           	cout<<endl<<"Scholarship Based On 12th Board Marks:- N.A"<<endl<<"(No Scholarship For Percentage Less Than 70)";
 					}
 				}
-				}
+			}
 				
-				int x9; // test condition for sports scholarship
-				if (y==1||y==2||y==3)
+			int x9; // test condition for sports scholarship
+			if (y==1||y==2||y==3)
+			{
+				if(y==1)
 				{
-					if(y==1)
-					{
-						x9=84500;
-						cout<<endl<<endl<<"CONGRATULATION! You Are Going To Get 100% Scholarship On Tuition Fee"; 
-						cout<<endl<<"On The Basis Of Sports Scholarship As You Are Gold Medalist";
-					}
-					else if(y==2)
-					{
-						x9=42250;
-						cout<<endl<<endl<<"CONGRATULATION! You Are Going To Get 50% Scholarship On Tuition Fee";
-						cout<<endl<<"On The Basis Of Sports Scholarship As You Are Silver Medalist";
-					}
-					else if(y==3)
-					{
-						x9=21125;
-						cout<<endl<<endl<<"CONGRATULATION! You Are Going To Get 25% Scholarship On Tuition Fee";
-						cout<<endl<<"On The Basis Of Sports Scholarship As You Are Bronze Medalist";
-					}
+					x9=84500;
+					cout<<endl<<endl<<"CONGRATULATION! You Are Going To Get 100% Scholarship On Tuition Fee"; 
+					cout<<endl<<"On The Basis Of Sports Scholarship As You Are Gold Medalist";
 				}
-				else x9=0;
-				
-				int x55; // total scholarship calculation
-				if(y==1||y==2||y==3)
+				else if(y==2)
 				{
-					cout<<endl<<endl<<"1. Total Academic Scholarship:-"<<x7+x8<<"/- Per Sem";
-					cout<<endl<<"2. Total Sports Scholarship:-"<<x9<<"/- Per Sem"<<endl<<endl;
-					
-					if((x7+x8)>x9)
-					{
-						cout<<"You Will Get Academic Scholarship:-"<<(x55=x7+x8)<<"/- Per Sem";
-					}	
-					else cout<<"You Will Get Sports Scholarship:-"<<(x55=x9)<<"/- Per Sem";
+					x9=42250;
+					cout<<endl<<endl<<"CONGRATULATION! You Are Going To Get 50% Scholarship On Tuition Fee";
+					cout<<endl<<"On The Basis Of Sports Scholarship As You Are Silver Medalist";
 				}
-				else cout<<endl<<endl<<"Total Scholarship:-"<<(x55=x7+x8)<<"/- Per Sem";
+				else if(y==3)
+				{
+					x9=21125;
+					cout<<endl<<endl<<"CONGRATULATION! You Are Going To Get 25% Scholarship On Tuition Fee";
+					cout<<endl<<"On The Basis Of Sports Scholarship As You Are Bronze Medalist";
+				}
+			}
+			else x9=0;
 				
-				cout<<endl<<endl<<"Please Wait! You Will Receive A File In Which You Will Get All Information About Your Fee";
-				cout<<endl<<"Thank You!";
+			int x55; // total scholarship calculation
+			if(y==1||y==2||y==3)
+			{
+				cout<<endl<<endl<<"1. Total Academic Scholarship:-"<<x7+x8<<"/- Per Sem";
+				cout<<endl<<"2. Total Sports Scholarship:-"<<x9<<"/- Per Sem"<<endl<<endl;
+
+				if((x7+x8)>x9)
+				{
+					cout<<"You Will Get Academic Scholarship:-"<<(x55=x7+x8)<<"/- Per Sem";
+				}	
+				else cout<<"You Will Get Sports Scholarship:-"<<(x55=x9)<<"/- Per Sem";
+			}
+			else cout<<endl<<endl<<"Total Scholarship:-"<<(x55=x7+x8)<<"/- Per Sem";
+
+			cout<<endl<<endl<<"Please Wait! You Will Receive A File In Which You Will Get All Information About Your Fee";
+			cout<<endl<<"Thank You!";
 				
 			fstream f10; // scholarship details in a file
 			f10.open("Scholarship Details.cpp",ios::out|ios::app);
@@ -361,8 +350,8 @@ int main()
 				(s1+i)->out();
 			}
 		}
-}
-else cout<<endl<<endl<<"Invalid Choice";
-getch();
-return 0;
+	}
+	else cout<<endl<<endl<<"Invalid Choice";
+	getch();
+	return 0;
 }
