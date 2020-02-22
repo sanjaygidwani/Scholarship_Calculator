@@ -4,4 +4,4 @@ In this project, a student should be able to enter marks of 12th Standard, JEE M
 
 I used C++ programming language with basic OOP and File Handling concepts to create this project.
 
-![](scholarship-calculator-for-freshmen.png)
+![](project_img.png)
